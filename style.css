@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,114 +7,84 @@
 }
 
 body {
-  color: #10151D;
-  width: 100%;
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-}
-::selection {
-  background-color: #FF3FC9; 
-  color: white; 
+    font-family: "Montserrat", sans-serif;
+    background-image: url(orange.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Bu özellik resmi tam ekran yapar */
+    color: #1A1A1C;
 }
 
-.MyName {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-margin-top: 3%;
-}
-
-.name {
-font-size: 60px;
-font-weight: 900;
-}
-
-.name span {
-color: #FF3FC9;
-}
-
-.MyName p {
-text-align: center;
-margin-top: 1rem;
-font-size: 20px;
-}
-
-.icon {
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    height: 100vh;
+    flex-direction: column;
 }
 
-.lft {
-    width: 46px;
-margin-left: 25px;
-transition: transform 0.3s ease-in-out;
-cursor: pointer;
+.main-container h1{
+    font-size: 75px;
 }
 
-.icon img:hover {
-    transform: translateY(-20px);
+.main-container h3{
+    font-size: 50px;
 }
 
-.Projects {
-    font-size: 30px;
-    font-weight: 900;
+.main-container p{
+    margin-top: 5px;
+    display: flex;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
 }
 
-  .portfolio {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 33.5%;
-
-  }
-  .portfolio-2, .portfolio p {
-    margin-top: 0.3rem;
-}
-  .portfolio-2 {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 33.5%;
-
-  }
-
-  .project {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-  }
-  
-  h3 {
-    margin-top: 0;
-  }
-  
-    .button {
-    display: block;
+.button {
     margin-top: 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #FF3FC9;
-    width: 120px;
-    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 30px;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #FFA800;
+    outline: 3px #FFA800 solid;
+    outline-offset: -3px;
     border-radius: 5px;
-    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    box-shadow: 0 5px 15px #FFA800;
   }
   
-  a:hover {
-    text-decoration: underline;
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+    margin-top: 1px;
+    
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+  }
+  
+  .button:hover .text {
+    color: #181717;
+  }
+  
+  .button:hover svg path {
+    fill: #181717;
+  }
+
+  .spadey {
+    margin-top: 40px; /* i */
+    margin-left: 40px; /* love */
+    font-size: 25px; /* you */
+  }
+
+  a {
+    text-decoration: none; /* my heart */
   }
